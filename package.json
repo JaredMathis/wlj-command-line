@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JaredMathis/wlj-command-line/issues"
   },
-  "homepage": "https://github.com/JaredMathis/wlj-command-line#readme"
+  "homepage": "https://github.com/JaredMathis/wlj-command-line#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
