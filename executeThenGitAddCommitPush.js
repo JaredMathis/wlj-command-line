@@ -1,11 +1,10 @@
 
 const executeThen = require('./executeThen');
+const executeThenGitAddCommitPushThen = require('./executeThenGitAddCommitPushThen');
 const gitAddCommitPush = require('./gitAddCommitPush');
 
 module.exports = executeThenGitAddCommitPush;
 
 function executeThenGitAddCommitPush(message) {
-    executeThen(message, () => {
-        gitAddCommitPush(message);
-    })
+    executeThenGitAddCommitPushThen(message, () => {})
 }
