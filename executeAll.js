@@ -8,7 +8,7 @@ function executeAll(commands, then) {
         console.log('here', {commands});
         commands.splice(0, 1);
         if (commands.length) {
-            executeAll(commands);
+            executeAll(commands, then);
         } else {
             then();
         }
