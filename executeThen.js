@@ -17,7 +17,7 @@ function executeThen(command, then) {
             console.log(stdout);
         }
         
-        console.log('executeThen: Executing then')
+        // console.log('executeThen: Executing then')
         then();
     });
 }

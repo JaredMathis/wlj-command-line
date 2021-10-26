@@ -10,7 +10,7 @@ rl.setPrompt('');
 rl.prompt();
 rl.on('line', (line) => {
     executeThenGitAddCommitPushThen(line, () => {
-        console.log('!!!here!!!');
+        // console.log('!!!here!!!');
         displayPrompt();
     });
 });
