@@ -1,10 +1,11 @@
 var readline = require('readline');
+const executeThenGitAddCommitPush = require('./executeThenGitAddCommitPush');
   
 var rl = readline.createInterface(
     process.stdin, process.stdout);
 
 rl.setPrompt('');
 rl.prompt();
-rl.on('line', (age) => {
-    console.log(`Age received by the user: ${age}`);
+rl.on('line', (line) => {
+    executeThenGitAddCommitPush(line);
 });
