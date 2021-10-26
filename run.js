@@ -1,5 +1,6 @@
 var readline = require('readline');
 const executeThenGitAddCommitPush = require('./executeThenGitAddCommitPush');
+const executeThenGitAddCommitPushThen = require('./executeThenGitAddCommitPushThen');
   
 var rl = readline.createInterface(
     process.stdin, process.stdout);
