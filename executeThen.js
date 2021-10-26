@@ -11,7 +11,6 @@ function executeThen(command, then) {
         }
         if (stderr) {
             console.log(`stderr: ${stderr}`);
-            return;
         }
 
         if (stdout) {
