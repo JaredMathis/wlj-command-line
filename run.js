@@ -8,7 +8,9 @@ displayPrompt();
 rl.setPrompt('');
 rl.prompt();
 rl.on('line', (line) => {
+    console.log('here1');
     executeThenGitAddCommitPush(line);
+    console.log('here2');
 
     displayPrompt();
 });
