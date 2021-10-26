@@ -3,7 +3,7 @@ const { exec } = require("child_process");
 module.exports = executeThen;
 
 function executeThen(command, then) {
-    console.log('Executing: ' + command)
+    console.log('executeThen: Executing: ' + command)
     exec(command, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
@@ -18,6 +18,7 @@ function executeThen(command, then) {
             console.log(stdout);
         }
         
+        console.log('executeThen: Executing then')
         then();
     });
 }
